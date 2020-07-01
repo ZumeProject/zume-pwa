@@ -1,0 +1,39 @@
+{
+  "navigation": {
+    "home": "Rumah",
+    "account": "Akun",
+    "about": "Tentang"
+  },
+  "menu": {
+    "settings": "Pengaturan",
+    "downloads": "Unduhan",
+    "language": "Bahasa",
+    "reset_app": "Setel Ulang Aplikasi",
+    "reset_app_warning": "Menyetel ulang aplikasi akan menghapus semua data aplikasi. Anda yakin ingin mengatur ulang?",
+    "help": "Tolong",
+    "guidebook": "Buku kerja",
+    "signout": "Keluar"
+  },
+  "downloads": {
+    "download_all": "Unduh semua"
+  },
+  "language": {
+    "select_header": "Pilih Bahasa"
+  },
+  "sessions": {
+    "start_session": "Mulai Sesi"
+  },
+  "live": {
+    "exit": "Keluar",
+    "previous": "Sebelumnya",
+    "next": "Lanjut"
+  },
+  "install": {
+    "install": "Instal",
+    "install_explanation": "Aplikasi ini dapat diinstal ke perangkat Anda. Klik untuk menginstal aplikasi ini.",
+    "ios_learn_more": "Belajarlah lagi",
+    "ios_install_explanation": "Ketuk ikon bagikan dan 'Tambahkan ke Layar Utama' untuk menginstal aplikasi ini.",
+    "update": "Perbarui",
+    "update_explanation": "Aplikasi ini ada versi baru. Klik untuk memperbarui aplikasi ini."
+  }
+}

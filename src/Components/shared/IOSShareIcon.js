@@ -1,0 +1,115 @@
+import React from 'react';
+import { SvgIcon } from '@material-ui/core';
+
+export default function IOSShareIcon(props) {
+  return (
+    <SvgIcon {...props} viewBox="0 0 100 140">
+      <g>
+        <title>Layer 1</title>
+        <line
+          stroke="#147aff"
+          stroke-linecap="undefined"
+          stroke-linejoin="undefined"
+          id="svg_2"
+          y2="130.223208"
+          x2="5.333331"
+          y1="34.889872"
+          x1="5.749998"
+          stroke-width="6"
+          fill="none"
+        />
+        <line
+          stroke-linecap="undefined"
+          stroke-linejoin="undefined"
+          id="svg_3"
+          y2="129.889872"
+          x2="95.000002"
+          y1="34.889872"
+          x1="94.750002"
+          stroke-width="6"
+          stroke="#147aff"
+          fill="none"
+        />
+        <line
+          transform="rotate(90 50.20833206176757,127.44494628906251) "
+          stroke-linecap="undefined"
+          stroke-linejoin="undefined"
+          id="svg_4"
+          y2="175.000002"
+          x2="50.333333"
+          y1="79.889874"
+          x1="50.083333"
+          stroke-width="6"
+          stroke="#147aff"
+          fill="none"
+        />
+        <line
+          stroke-linecap="undefined"
+          stroke-linejoin="undefined"
+          id="svg_9"
+          y2="34.889872"
+          x2="33.766125"
+          y1="34.889872"
+          x1="2.75"
+          fill-opacity="null"
+          stroke-width="6"
+          stroke="#147aff"
+          fill="none"
+        />
+        <line
+          stroke-linecap="undefined"
+          stroke-linejoin="undefined"
+          id="svg_10"
+          y2="34.889872"
+          x2="97.766125"
+          y1="34.889872"
+          x1="66.75"
+          fill-opacity="null"
+          stroke-width="6"
+          stroke="#147aff"
+          fill="none"
+        />
+        <line
+          stroke="#147aff"
+          stroke-linecap="undefined"
+          stroke-linejoin="undefined"
+          id="svg_11"
+          y2="10.19463"
+          x2="50.75"
+          y1="88.223195"
+          x1="50.75"
+          fill-opacity="null"
+          stroke-width="6"
+          fill="none"
+        />
+        <line
+          stroke="#147aff"
+          transform="rotate(-24.640222549438477 45.75,11.889869689941404) "
+          stroke-linecap="undefined"
+          stroke-linejoin="undefined"
+          id="svg_12"
+          y2="7.680333"
+          x2="54.983494"
+          y1="16.099407"
+          x1="36.516505"
+          fill-opacity="null"
+          stroke-width="6"
+          fill="none"
+        />
+        <line
+          transform="rotate(-109.3953857421875 55.75,11.389868736267097) "
+          stroke-linecap="undefined"
+          stroke-linejoin="undefined"
+          id="svg_13"
+          y2="6.889869"
+          x2="64.750002"
+          y1="15.889869"
+          x1="46.750002"
+          stroke-width="6"
+          stroke="#147aff"
+          fill="none"
+        />
+      </g>
+    </SvgIcon>
+  );
+}

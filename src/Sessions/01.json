@@ -1,0 +1,236 @@
+{
+  "t": "Session 1",
+  "assets": [
+    {
+      "type": "pdf",
+      "key": "guidebook"
+    },
+    {
+      "type": "video",
+      "key": "welcome"
+    },
+    {
+      "type": "video",
+      "key": "teach-them-to-obey"
+    },
+    {
+      "type": "video",
+      "key": "spiritual-breathing"
+    },
+    {
+      "type": "audio",
+      "key": "soaps"
+    },
+    {
+      "type": "audio",
+      "key": "accountability-group"
+    }
+  ],
+  "sections": [
+    {
+      "t": "Welcome to Zúme",
+      "parts": [
+        {
+          "type": "cta",
+          "t": "Download",
+          "d": "You will be able to follow along on a digital PDF for this session, but please make sure that each member of your group has a printed copy of the materials for future sessions.",
+          "payload": {
+            "label": "DOWNLOAD GUIDEBOOK",
+            "key": "guidebook"
+          }
+        }
+      ]
+    },
+    {
+      "t": "Group Prayer (5min)",
+      "info": "Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.",
+      "duration": 5
+    },
+    {
+      "t": "God Uses Ordinary People",
+      "d": "You'll see how God uses ordinary people doing simple things to make a big impact.",
+      "duration": 15,
+      "parts": [
+        {
+          "type": "watch",
+          "d": "God uses ordinary people doing simple things to make a big impact. Watch this video on how God works.",
+          "payload": {
+            "video": "welcome",
+            "script": "welcome-script",
+            "scriptLabel": "Zúme Video Scripts: Welcome"
+          }
+        },
+        {
+          "type": "discuss",
+          "d": "If Jesus intended every one of His followers to obey His Great Commission, why do so few actually make disciples?"
+        }
+      ]
+    },
+    {
+      "t": "Obedience Focused Disciple-Making",
+      "d": "Discover the essence of being a disciple, making a disciple, and what is the church.",
+      "duration": 15,
+      "parts": [
+        {
+          "type": "watch",
+          "d": "What is a disciple? And how do you make one? How do you teach a follower of Jesus to do what He told us in His Great Commission – to obey all of His commands?",
+          "payload": {
+            "video": "teach-them-to-obey",
+            "script": "teach-them-to-obey-script",
+            "scriptLabel": "Zúme Video Scripts: Teach Them to Obey"
+          }
+        },
+        {
+          "type": "discuss",
+          "questions": [
+            "When you think of a church, what comes to mind?",
+            "What's the difference between that picture and what's described in the video as a \"Simple Church\"?",
+            "Which one do you think would be easier to multiply and why?"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "Spiritual Breathing",
+      "d": "Being a disciple means we hear from God and we obey God.",
+      "duration": 15,
+      "parts": [
+        {
+          "type": "watch",
+          "d": "We breathe in. We breathe out. We're alive. Spiritual Breathing is like that, too.",
+          "payload": {
+            "video": "spiritual-breathing",
+            "script": "spiritual-breathing-script",
+            "scriptLabel": "Zúme Video Scripts: Spiritual Breathing"
+          }
+        },
+        {
+          "type": "discuss",
+          "questions": [
+            "Why is it essential to learn to hear and recognize God's voice?",
+            "Is hearing and responding to the Lord really like breathing? Why or why not?"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "SOAPS Bible Reading",
+      "d": "A tool for daily Bible study that helps you understand, obey, and share God’s Word.",
+      "duration": 3,
+      "parts": [
+        {
+          "type": "read",
+          "d": [
+            {
+              "t": "S.O.A.P.S. Bible Reading",
+              "d": "Hearing from God regularly is a key element in our personal relationship with Him, and in our ability to stay obediently engaged in what He is doing around us."
+            }
+          ]
+        },
+        {
+          "type": "listen",
+          "payload": {
+            "audio": "soaps",
+            "text": [
+              " As a follower of Jesus, we should be reading Scripture daily. A good guideline is to read through a minimum of 25-30 chapters in the Bible each week. Keeping a daily journal daily using the S.O.A.P.S. Bible Reading format will help you understand, obey and share even more. S.O.A.P.S. is:",
+              [
+                " Scripture: Write out one or more verses that are particularly meaningful to you, today.",
+                " Observation: Rewrite those verses or key points in your own words to better understand.",
+                "Application: Think about what it means to obey these commands in your own life.",
+                "Prayer: Write out a prayer telling God what you’ve learned and how you plan to obey.",
+                "Sharing: Ask God who He wants you to share with about what you’ve learned applied."
+              ],
+              "Here’s an example of S.O.A.P.S. at work:",
+              "S – “For my thoughts are not your thoughts, nor are your ways My ways,” declares the Lord. “For as the heavens are higher than the earth, so are My ways higher than your ways and My thoughts than your thoughts.” Isaiah 55:8-9",
+              "O – As a human, I’m limited in what I know and what I know how to do. God is not limited in any way. He sees and knows EVERYTHING. He can do ANYTHING.",
+              "A – Since God knows everything and His ways are best, I’ll have much more success in life if I follow Him instead of relying on my own way of doing things.",
+              "P – Lord, I don’t know how to live a good life that pleases You and helps others. My ways lead to mistakes. My thoughts lead to hurt. Please teach me Your ways and Your thoughts, instead. Let your Holy Spirit guide me as I follow You.",
+              "S – I will share these verses and this application with my friend, Steve, who is going through a difficult time and needs direction for important decisions he’s facing."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "t": "Accountability Groups",
+      "d": "A tool for two or three people of the same gender to meet weekly and encourage each other in areas that are going well and reveal areas that need correction.",
+      "duration": 3,
+      "parts": [
+        {
+          "type": "read",
+          "d": [
+            {
+              "t": "Accountability Groups",
+              "d": "The Bible tells us that every follower of Jesus will one day be held accountable for what we do and say and think. Accountability Groups are a great way to get ready!"
+            }
+          ]
+        },
+        {
+          "type": "listen",
+          "payload": {
+            "audio": "accountability-group",
+            "text": "Accountability Groups are made up of two or three people of the same gender - men with men, women with women - who meet once a week to discuss a set of questions that help reveal areas where things are going right and other areas that need correction. They can even meet by phone if they’re unable to meet face-to-face. Everyone in the group needs to understand that what is shared is confidential."
+          }
+        }
+      ]
+    },
+    {
+      "t": "Practice (45min)",
+      "duration": 45,
+      "parts": [
+        {
+          "t": "BREAK UP",
+          "d": "Break into groups of two or three people of the same gender."
+        },
+        {
+          "type": "discuss",
+          "d": "Spend the next 45 minutes working together through Accountability Questions – List 2 in the \"Accountability Groups\" section of your",
+          "questions": [
+            "How have your insights from last week’s reading shaped the way you think and live?",
+            "Who did you pass your insights from last week on to and how was it received?",
+            "How have you seen God at work?",
+            "Have you been a testimony this week to the greatness of Jesus Christ with both your words and actions?",
+            "Have you been exposed to sexually alluring material or allowed your mind to entertain inappropriate sexual thoughts?",
+            "Have you acknowledged God’s ownership in your use of money?",
+            "Have you coveted anything?",
+            "Have you hurt someone’s reputation or feelings by your words?",
+            "Have you been dishonest in word or action or exaggerated?",
+            "Have you given into an addictive [or lazy or undisciplined] behavior?",
+            "Have you been a slave to clothing, friends, work, or possessions?",
+            "Have you failed to forgive someone?",
+            "What worries or anxieties are you facing? Have you complained or grumbled?",
+            "Have you maintained a thankful heart?",
+            "Have you been honoring, understanding and generous in your important relationships?",
+            "What temptations in thought, word, or action have you faced and how did you respond?",
+            "How have you taken opportunities to serve or bless others, especially believers?",
+            "Have you seen specific answers to prayer?",
+            "Did you complete the reading for the week?"
+          ]
+        }
+      ]
+    },
+    {
+      "t": "LOOKING FORWARD",
+      "d": "Congratulations! You've completed Session 1.",
+      "info": "Below are next steps to take in preparation for the next session.",
+      "parts": [
+        {
+          "t": "OBEY",
+          "d": "Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format."
+        },
+        {
+          "t": "SHARE",
+          "d": "Spend time asking God who He might want you to start an Accountability Group with using the tools you've learned in this session. Share this person’s name with the group before you go. Reach out to that person about starting an Accountability Group and meeting with you weekly."
+        },
+        {
+          "t": "PRAY",
+          "d": "Pray that God helps you be obedient to Him and invite Him to work in you and those around you!"
+        },
+        {
+          "t": "#ZumeProject",
+          "d": "Take a picture of your S.O.A.P.S. Bible study and share it on social media."
+        }
+      ]
+    }
+  ]
+}
