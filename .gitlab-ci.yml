@@ -1,0 +1,65 @@
+image: node:latest
+
+# Announce the URL as per CRA docs
+# https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#advanced-configuration
+variables:
+  PUBLIC_URL_STAGING: /zume-pwa
+  PUBLIC_URL_PROD: /app
+
+# Cache modules between jobs
+cache:
+  key: ${CI_COMMIT_REF_SLUG} # cache per-branch https://docs.gitlab.com/ce/ci/caching/index.html
+  paths:
+    - node_modules/
+
+before_script:
+  - NO_POSTINSTALL=1 yarn
+
+pages:
+  stage: deploy
+  script:
+    - export PUBLIC_URL=$PUBLIC_URL_STAGING
+    - npm run build --prod
+    - rm -rf public
+    - mv build public
+    - npx replace-in-file /%PUBLIC_URL%/g $PUBLIC_URL public/404.html --isRegex
+    - npx replace-in-file /%PUBLIC_URL%/g $PUBLIC_URL public/manifest.json --isRegex
+  artifacts:
+    paths:
+      - public # mandatory, other folder won't work
+  only:
+    - master # or dev, the branch you want to publish
+
+release:
+  stage: deploy
+  before_script:
+    - apt-get update -qy
+    - apt-get install -y lftp
+    ##
+    ## Install ssh-agent if not already installed, it is required by Docker.
+    ## (change apt-get to yum if you use an RPM-based image)
+    ##
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    ##
+    ## Run ssh-agent (inside the build environment)
+    ##
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - export PUBLIC_URL=$PUBLIC_URL_PROD
+    - npm run build --prod
+    - rm -rf public
+    - mv build public
+    - npx replace-in-file /%PUBLIC_URL%/g $PUBLIC_URL public/404.html --isRegex
+    - npx replace-in-file /%PUBLIC_URL%/g $PUBLIC_URL public/manifest.json --isRegex
+    - lftp -p ${SFTP_PORT} -u ${SFTP_USERNAME},${SFTP_PASSWORD} sftp://${SFTP_HOST} -e "debug; mirror -X .* -X .*/ --reverse --verbose --delete public/ ${DESTINATION_FOLDER}; bye"
+  only:
+    - master # or dev, the branch you want to publish
+
+test:
+  stage: test
+  script:
+    - yarn test --verbose=true
+  # eventually add except - master when we use feature branches to develop
