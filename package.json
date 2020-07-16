@@ -27,7 +27,7 @@
     "react-swipeable-views": "^0.13.9",
     "react-swipeable-views-utils": "^0.13.9",
     "redux-persist": "^5.10.0",
-    "webpack": "^4.43.0"
+    "webpack": "4.42.0"
   },
   "scripts": {
     "postinstall": "test -n \"$NO_POSTINSTALL\" || node node_modules/husky/lib/installer/bin install",
