@@ -1,0 +1,53 @@
+{
+  "general": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "navigation": {
+    "home": "Home",
+    "account": "Account",
+    "about": "About"
+  },
+  "menu": {
+    "settings": "Settings",
+    "downloads": "Downloads",
+    "language": "Language",
+    "reset_app": "Reset App",
+    "reset_app_warning": "Resetting the app will delete all app data. Are you sure you want to reset?",
+    "help": "Help",
+    "guidebook": "Workbook",
+    "signout": "Sign out"
+  },
+  "downloads": {
+    "download_all": "Download all",
+    "download": "Download",
+    "downloading": "Downloading",
+    "queued": "Queued",
+    "delete": "Delete",
+    "clear_errors": "Do you want to clear these download errors?",
+    "tap_to_persist": "Tap to persist"
+  },
+  "language": {
+    "select_header": "Select Language"
+  },
+  "sessions": {
+    "start_session": "Start Session",
+    "no_sessions": "No sessions available"
+  },
+  "live": {
+    "exit": "Exit",
+    "previous": "Previous",
+    "next": "Next",
+    "finish": "Finish",
+    "share": "Share"
+  },
+  "install": {
+    "install": "Install",
+    "install_explanation": "This app can be installed to your device. Click to install this app.",
+    "recommend_chrome": "This app can be installed to your device. Please use the Chrome browser to do so.",
+    "ios_learn_more": "Learn more",
+    "ios_install_explanation": "Tap on Safari's share icon and tap 'Add to Home Screen' to install this app.",
+    "update": "Update",
+    "update_explanation": "A new version of this app is available. Click to update this app."
+  }
+}

@@ -17,7 +17,7 @@ const { assetBaseUrls, assetCacheName, precachePublicAssets } = sessions;
 // TODO generate the revisions automatically so we don't have to specify them.
 // TODO how about the localization files?
 const publicAssetsToCache = [].concat(precachePublicAssets || []).map(pa => {
-  pa.url = `%PUBLIC_URL%${pa.url}`;
+  pa.url = `https://zume-pwa.firebaseapp.com${pa.url}`;
   return pa;
 });
 workbox.precaching.precacheAndRoute(publicAssetsToCache, {});

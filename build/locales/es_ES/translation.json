@@ -1,0 +1,39 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "account": "Cuenta",
+    "about": "Acerca de"
+  },
+  "menu": {
+    "settings": "Configuraciones",
+    "downloads": "Descargas",
+    "language": "Idioma",
+    "reset_app": "Restablecer aplicación",
+    "reset_app_warning": "Al restablecer la aplicación, se eliminarán todos los datos de la aplicación. ¿Está seguro que quiere reiniciar?",
+    "help": "Ayuda",
+    "guidebook": "Libro de trabajo",
+    "signout": "Desconectar"
+  },
+  "downloads": {
+    "download_all": "Descargar todo"
+  },
+  "language": {
+    "select_header": "Seleccione el idioma"
+  },
+  "sessions": {
+    "start_session": "Iniciar sesión"
+  },
+  "live": {
+    "exit": "Salida",
+    "previous": "Anterior",
+    "next": "Próximo"
+  },
+  "install": {
+    "install": "Instalar",
+    "install_explanation": "Esta aplicación se puede instalar en su dispositivo. Haz clic para instalar esta aplicación.",
+    "ios_learn_more": "Aprende más",
+    "ios_install_explanation": "Toque el icono de compartir y 'Agregar a la pantalla de inicio' para instalar esta aplicación.",
+    "update": "Actualizar",
+    "update_explanation": "Una nueva versión de esta aplicación está disponible. Haz clic para actualizar esta aplicación."
+  }
+}

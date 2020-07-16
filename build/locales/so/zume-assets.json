@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/so/"
+  },
+  "overview": {
+    "size": 188,
+    "url": "32.mp4"
+  },
+  "10-session-graphic": {
+    "size": 188,
+    "url": "93.png"
+  },
+  "8-people-graphic": {
+    "size": 189,
+    "url": "103.png"
+  },
+  "zume-scroll": {
+    "size": 189,
+    "url": "102.png"
+  },
+  "guidebook": {
+    "size": 206,
+    "url": "33_en_zume_guidebook.pdf"
+  },
+  "welcome": {
+    "size": 187,
+    "url": "1.mp4"
+  },
+  "welcome-script": {
+    "size": 207,
+    "url": "34_en_welcome_to_zume.pdf"
+  },
+  "teach-them-to-obey": {
+    "size": 187,
+    "url": "2.mp4"
+  },
+  "teach-them-to-obey-script": {
+    "size": 210,
+    "url": "35_en_teach_them_to_obey.pdf"
+  },
+  "spiritual-breathing": {
+    "size": 187,
+    "url": "3.mp4"
+  },
+  "spiritual-breathing-script": {
+    "size": 211,
+    "url": "36_en_spiritual_breathing.pdf"
+  },
+  "soaps": {
+    "size": 187,
+    "url": "4.mp4"
+  },
+  "soaps-script": {
+    "size": 197,
+    "url": "37_en_soaps.pdf"
+  },
+  "accountability-group": {
+    "size": 187,
+    "url": "5.mp4"
+  },
+  "accountability-group-script": {
+    "size": 213,
+    "url": "38_en_accountability_groups.pdf"
+  },
+  "producers-vs-consumers": {
+    "size": 187,
+    "url": "6.mp4"
+  },
+  "producers-vs-consumers-script": {
+    "size": 214,
+    "url": "39_en_producers_vs_consumers.pdf"
+  },
+  "prayer-cycle": {
+    "size": 187,
+    "url": "7.mp4"
+  },
+  "prayer-cycle-graphic": {
+    "size": 188,
+    "url": "99.png"
+  },
+  "prayer-cycle-script": {
+    "size": 204,
+    "url": "40_en_prayer_cycle.pdf"
+  },
+  "list-of-100": {
+    "size": 187,
+    "url": "8.mp4"
+  },
+  "list-of-100-page1": {
+    "size": 188,
+    "url": "94.png"
+  },
+  "list-of-100-page2": {
+    "size": 188,
+    "url": "95.png"
+  },
+  "list-of-100-page3": {
+    "size": 188,
+    "url": "96.png"
+  },
+  "list-of-100-worksheet": {
+    "size": 189,
+    "url": "100.pdf"
+  },
+  "list-of-100-script": {
+    "size": 203,
+    "url": "41_en_list_of_100.pdf"
+  },
+  "spiritual-economy": {
+    "size": 187,
+    "url": "9.mp4"
+  },
+  "spiritual-economy-script": {
+    "size": 209,
+    "url": "42_en_spiritual_economy.pdf"
+  },
+  "the-gospel": {
+    "size": 188,
+    "url": "10.mp4"
+  },
+  "the-gospel-script": {
+    "size": 202,
+    "url": "43_en_the_gospel.pdf"
+  },
+  "baptism": {
+    "size": 188,
+    "url": "11.mp4"
+  },
+  "baptism-script": {
+    "size": 199,
+    "url": "44_en_baptism.pdf"
+  },
+  "testimony": {
+    "size": 188,
+    "url": "12.mp4"
+  },
+  "testimony-script": {
+    "size": 210,
+    "url": "45_en_3_minute_testimony.pdf"
+  },
+  "greatest-blessing": {
+    "size": 188,
+    "url": "13.mp4"
+  },
+  "greatest-blessing-script": {
+    "size": 209,
+    "url": "46_en_greatest_blessing.pdf"
+  },
+  "duckling-discipleship": {
+    "size": 188,
+    "url": "14.mp4"
+  },
+  "duckling-discipleship-script": {
+    "size": 213,
+    "url": "47_en_duckling_discipleship.pdf"
+  },
+  "eyes-to-see": {
+    "size": 188,
+    "url": "15.mp4"
+  },
+  "eyes-to-see-script": {
+    "size": 203,
+    "url": "48_en_eyes_to_see.pdf"
+  },
+  "lords-supper": {
+    "size": 188,
+    "url": "16.mp4"
+  },
+  "lords-supper-script": {
+    "size": 204,
+    "url": "49_en_lords_supper.pdf"
+  },
+  "prayer-walking": {
+    "size": 188,
+    "url": "17.mp4"
+  },
+  "prayer-walking-script": {
+    "size": 206,
+    "url": "50_en_prayer_walking.pdf"
+  },
+  "person-of-peace": {
+    "size": 188,
+    "url": "18.mp4"
+  },
+  "person-of-peace-script": {
+    "size": 207,
+    "url": "51_en_person_of_peace.pdf"
+  },
+  "faithfulness": {
+    "size": 188,
+    "url": "19.mp4"
+  },
+  "faithfulness-script": {
+    "size": 204,
+    "url": "52_en_faithfulness.pdf"
+  },
+  "3/3-group": {
+    "size": 188,
+    "url": "21.mp4"
+  },
+  "3/3-group-script": {
+    "size": 202,
+    "url": "53_en_3_3_groups.pdf"
+  },
+  "training-cycle": {
+    "size": 188,
+    "url": "22.mp4"
+  },
+  "training-cycle-graphic": {
+    "size": 189,
+    "url": "101.png"
+  },
+  "training-cycle-script": {
+    "size": 206,
+    "url": "54_en_training_cycle.pdf"
+  },
+  "leadership-cells": {
+    "size": 188,
+    "url": "23.mp4"
+  },
+  "leadership-cells-script": {
+    "size": 208,
+    "url": "55_en_leadership_cells.pdf"
+  },
+  "non-sequential": {
+    "size": 188,
+    "url": "24.mp4"
+  },
+  "non-sequential-script": {
+    "size": 206,
+    "url": "56_en_non_sequential.pdf"
+  },
+  "pace": {
+    "size": 188,
+    "url": "25.mp4"
+  },
+  "pace-script": {
+    "size": 196,
+    "url": "57_en_pace.pdf"
+  },
+  "two-churches": {
+    "size": 188,
+    "url": "26.mp4"
+  },
+  "two-churches-script": {
+    "size": 212,
+    "url": "58_en_part_of_two_churches.pdf"
+  },
+  "three-month-plan": {
+    "size": 0,
+    "url": "https://zume.training/three-month-plan"
+  },
+  "four-fields-graphic": {
+    "size": 188,
+    "url": "98.png"
+  },
+  "generational-map": {
+    "size": 205,
+    "url": "generation-map-tree.svg"
+  },
+  "coaching-checklist": {
+    "size": 188,
+    "url": "27.mp4"
+  },
+  "coaching-checklist-graphic": {
+    "size": 188,
+    "url": "97.png"
+  },
+  "coaching-checklist-script": {
+    "size": 210,
+    "url": "60_en_coaching_checklist.pdf"
+  },
+  "leadership-in-networks": {
+    "size": 188,
+    "url": "28.mp4"
+  },
+  "leadership-in-networks-script": {
+    "size": 214,
+    "url": "61_en_leadership_in_networks.pdf"
+  },
+  "peer-mentoring-groups": {
+    "size": 188,
+    "url": "29.mp4"
+  },
+  "peer-mentoring-groups-script": {
+    "size": 206,
+    "url": "62_en_peer_mentoring.pdf"
+  },
+  "completion-of-training": {
+    "size": 188,
+    "url": "30.mp4"
+  },
+  "completion-of-training-script": {
+    "size": 214,
+    "url": "59_en_completion_of_training.pdf"
+  }
+}
