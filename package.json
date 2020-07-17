@@ -32,7 +32,7 @@
   "scripts": {
     "postinstall": "test -n \"$NO_POSTINSTALL\" || node node_modules/husky/lib/installer/bin install",
     "start": "react-scripts start",
-    "build": "react-scripts build && cra-append-sw ./src/sw-custom.js && replace-in-file /%PUBLIC_URL%/g https://zume-pwa.firebaseapp.com/ build/service-worker.js --isRegex",
+    "build": "react-scripts build && cra-append-sw ./src/sw-custom.js && replace-in-file /%PUBLIC_URL%/g https://app.zume.training/ build/service-worker.js --isRegex",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src --max-warnings=0",
