@@ -1,6 +1,6 @@
 {
   "meta": {
-    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/zh_TW/"
+    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/zhtw/"
   },
   "overview": {
     "size": 191,
@@ -20,7 +20,7 @@
   },
   "guidebook": {
     "size": 209,
-    "url": "33_en_zume_guidebook.pdf"
+    "url": "33_zh_TW_m_天國酵母訓練手冊.pdf"
   },
   "welcome": {
     "size": 190,
