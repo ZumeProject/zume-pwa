@@ -47,6 +47,11 @@
     "rtl": true
   },
   {
+    "enDisplayName": "Amharic",
+    "code": "amg",
+    "nativeName": "አማርኛ"
+  },
+  {
     "enDisplayName": "Bhojpuri",
     "code": "bho",
     "nativeName": "भोजपुरी"
@@ -62,10 +67,20 @@
     "nativeName": "বাংলা"
   },
   {
+    "enDisplayName": "German",
+    "code": "de",
+    "nativeName": "Deutsch"
+  },
+  {
     "enDisplayName": "Persian",
     "code": "fa_IR",
     "nativeName": "فارسی",
     "rtl": true
+  },
+  {
+    "enDisplayName": "Gujarati",
+    "code": "gu",
+    "nativeName": "ગુજરાતી"
   },
   {
     "enDisplayName": "Hausa",
@@ -79,6 +94,11 @@
     "nativeName": "Italiano"
   },
   {
+    "enDisplayName": "Japanese",
+    "code": "ja",
+    "nativeName": "日本語"
+  },
+  {
     "enDisplayName": "Kannada",
     "code": "kn",
     "nativeName": "ಕನ್ನಡ"
@@ -89,9 +109,25 @@
     "nativeName": "한국어"
   },
   {
+    "enDisplayName": "Kurdish",
+    "code": "ku",
+    "nativeName": "کوردی",
+    "rtl": true
+  },
+  {
     "enDisplayName": "Lao",
     "code": "lo",
     "nativeName": "ພາສາລາວ"
+  },
+  {
+    "enDisplayName": "Maithili",
+    "code": "mai",
+    "nativeName": "মৈথিনী"
+  },
+  {
+    "enDisplayName": "Malayalam",
+    "code": "mal",
+    "nativeName": "മലയാളം"
   },
   {
     "enDisplayName": "Marathi",
@@ -99,14 +135,24 @@
     "nativeName": "मराठी"
   },
   {
+    "enDisplayName": "Burmese",
+    "code": "my",
+    "nativeName": "ဗမာစာ"
+  },
+  {
     "enDisplayName": "Oriya",
     "code": "or_IN",
     "nativeName": "ଓଡ଼ିଆ"
   },
   {
-    "enDisplayName": "Panjabi",
-    "code": "pa_IN",
+    "enDisplayName": "Pagibete",
+    "code": "pae",
     "nativeName": "Apagibete"
+  },
+  {
+    "enDisplayName": "Pawnee",
+    "code": "paw",
+    "nativeName": "Pawnee"
   },
   {
     "enDisplayName": "Portuguese",
