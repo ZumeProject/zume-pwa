@@ -1,6 +1,6 @@
 {
   "meta": {
-    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/bn_IN/"
+    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/bn/"
   },
   "overview": {
     "size": 191,
@@ -20,7 +20,7 @@
   },
   "guidebook": {
     "size": 209,
-    "url": "33_en_zume_guidebook.pdf"
+    "url": "33_bn_জুমে_গাইডবুক.pdf"
   },
   "welcome": {
     "size": 190,

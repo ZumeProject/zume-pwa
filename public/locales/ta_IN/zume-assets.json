@@ -1,6 +1,6 @@
 {
   "meta": {
-    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/ta_IN/"
+    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/ta/"
   },
   "overview": {
     "size": 191,
@@ -20,7 +20,7 @@
   },
   "guidebook": {
     "size": 209,
-    "url": "33_en_zume_guidebook.pdf"
+    "url": "33_ta_சூம்_(ZÚME)_கையேடு_புத்தகம்.pdf"
   },
   "welcome": {
     "size": 190,

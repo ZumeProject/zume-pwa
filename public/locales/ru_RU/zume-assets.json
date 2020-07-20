@@ -1,6 +1,6 @@
 {
   "meta": {
-    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/ru_RU/"
+    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/ru/"
   },
   "overview": {
     "size": 191,
@@ -19,8 +19,8 @@
     "url": "102.png"
   },
   "guidebook": {
-    "size": 209,
-    "url": "33_en_zume_guidebook.pdf"
+    "size": 209000,
+    "url": "33_ru_руководство_зуме.pdf"
   },
   "welcome": {
     "size": 190,

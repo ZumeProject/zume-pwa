@@ -85,7 +85,7 @@
   },
   {
     "enDisplayName": "Korean",
-    "code": "ko",
+    "code": "ko_KR",
     "nativeName": "한국어"
   },
   {
@@ -115,8 +115,13 @@
   },
   {
     "enDisplayName": "Russian",
-    "code": "ru",
+    "code": "ru_RU",
     "nativeName": "русский"
+  },
+  {
+    "enDisplayName": "Romanian",
+    "code": "ro_RO",
+    "nativeName": "Română"
   },
   {
     "enDisplayName": "Somali",
@@ -142,17 +147,6 @@
     "enDisplayName": "Thai",
     "code": "th_TH",
     "nativeName": "ไทย"
-  },
-  {
-    "enDisplayName": "Turkish",
-    "code": "tr",
-    "nativeName": "Türkçe"
-  },
-  {
-    "enDisplayName": "Urdu",
-    "code": "ur",
-    "nativeName": "اردو",
-    "rtl": true
   },
   {
     "enDisplayName": "Vietnamese",
