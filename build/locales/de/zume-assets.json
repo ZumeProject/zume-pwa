@@ -1,10 +1,10 @@
 {
   "meta": {
-    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/ko/"
+    "baseUrl": "https://storage.googleapis.com/zume-file-mirror/de/"
   },
   "three-month-plan": {
     "size": 0,
-    "url": "https://zume.training/ko/three-month-plan-ko"
+    "url": "https://zume.training/de/three-month-plan-de"
   },
   "guidebook": {
     "size": 417271,
