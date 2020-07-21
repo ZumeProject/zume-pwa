@@ -1,3 +1,5 @@
+// @todo discontinue this script. The public url of https://app.zume.training hard wired to the app for development ease.
+
 const replace = require('replace-in-file');
 
 const PUBLIC_URL = process.env.PUBLIC_URL;

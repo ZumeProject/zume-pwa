@@ -1,3 +1,5 @@
+// @todo discontinue use of this script. Not functioning
+
 /**
  * This script will look for src/sessions/index.json
  * and load up each session file listed in it.
@@ -10,7 +12,7 @@
 const sessions = require('../src/Sessions/index.json');
 
 // TODO make this configurable
-const mediaRoot = 'https://s3.amazonaws.com/zume-ugly-prototype-media/';
+const mediaRoot = 'https://storage.googleapis.com/zume-file-mirror/';
 
 const typeToDefaultExt = {
   video: 'mp4',

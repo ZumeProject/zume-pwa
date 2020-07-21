@@ -1,3 +1,6 @@
+// @todo discontinue this script. The zume.json files are directly created from the POEditor.com language source to the github repository.
+
+
 // this needs to accept the following arguments:
 // 1 - a folder where the po files are (which locales should be accepted?)
 // 2 - specify what the locale file name is supposed to be (e.g. zume.json)
