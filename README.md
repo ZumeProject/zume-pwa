@@ -39,6 +39,12 @@ In the project directory, you can run:
 ### `yarn install`
 Use yarn to install required dependencies to launch the repo.
 
+### 'yarn serve'
+Local server
+
+### 'firebase serve'
+
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
