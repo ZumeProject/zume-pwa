@@ -25,6 +25,11 @@
     "nativeName": "繁體中文"
   },
   {
+    "enDisplayName": "Malayalam",
+    "code": "ml",
+    "nativeName": "മലയാളം"
+  },
+  {
     "enDisplayName": "Hindi",
     "code": "hi_IN",
     "nativeName": "हिंदी"
