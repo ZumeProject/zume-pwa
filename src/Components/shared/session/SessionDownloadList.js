@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import filesize from 'filesize.js';
-import { useTranslation } from 'react-i18next';
 import { useAppTranslation } from 'Components/zume/translationHooks';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -22,17 +21,16 @@ export default function SessionDownloadList({
   onDelete,
   onCancel
 }) {
-  const { t } = useTranslation();
   const trans = useAppTranslation();
 
   if (!sessionsWithSizes || !sessionsWithSizes.length) {
-    return <div>{t('sessions|no_sessions')}</div>;
+    return <div>{trans('No sessions available')}</div>;
   }
 
   return (
     <List>
       {sessionsWithSizes.map(s => {
-        let actionLabel = t('downloads|download');
+        let actionLabel = trans('Download');
         let iconButton = generateIconButton(
           <CloudDownloadIcon />,
           actionLabel,
@@ -40,7 +38,7 @@ export default function SessionDownloadList({
         );
 
         if (s.isDownloading) {
-          actionLabel = t('downloads|downloading');
+          actionLabel = trans('Downloading');
           let cancel = () => onCancel(s.assetReferences);
           let innerIconButton = generateIconButton(
             <StopIcon />,
@@ -59,7 +57,7 @@ export default function SessionDownloadList({
         }
 
         if (s.isQueued) {
-          actionLabel = t('downloads|queued');
+          actionLabel = trans('Queued');
           let innerIconButton = generateIconButton(
             <StopIcon />,
             actionLabel,
@@ -69,7 +67,7 @@ export default function SessionDownloadList({
         }
 
         if (s.offlineAccess || s.offlineProgress === 100) {
-          actionLabel = t('downloads|delete');
+          actionLabel = trans('Delete');
           iconButton = generateIconButton(<DeleteIcon />, actionLabel, () =>
             onDelete(s.assetReferences)
           );
@@ -108,7 +106,7 @@ function generateIconButton(icon, actionLabel, onClick) {
 }
 
 function ErrorDialogWithButton({ onAccept, errors }) {
-  const { t } = useTranslation();
+  const trans = useAppTranslation();
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -143,14 +141,14 @@ function ErrorDialogWithButton({ onAccept, errors }) {
         <WarningIcon />
       </ListItemIcon>
       <AlertDialog
-        title={t('downloads|clear_errors')}
+        title={trans('Do you want to clear these download errors?')}
         description={description}
         open={open}
         handleClose={handleClose}
         actions={
           <React.Fragment>
             <Button onClick={handleClose} color="primary">
-              {t('general|no')}
+              {trans('No')}
             </Button>
             <Button
               onClick={() => {
@@ -160,7 +158,7 @@ function ErrorDialogWithButton({ onAccept, errors }) {
               color="primary"
               autoFocus
             >
-              {t('general|yes')}
+              {trans('Yes')}
             </Button>
           </React.Fragment>
         }

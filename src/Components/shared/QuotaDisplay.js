@@ -1,5 +1,6 @@
 import React from 'react';
 import { PROMPT } from 'Redux/downloads/storage';
+import { useAppTranslation } from 'Components/zume/translationHooks';
 
 /**
  * Displays a progress bar of the user's storage quota
@@ -10,10 +11,11 @@ export default function QuotaDisplay({ data, persistButton }) {
     data = {};
   }
   const { quota, usage, persisted } = data;
+  const trans = useAppTranslation();
   let label = ''; //'Storage usage not available';
   let percent = 0;
   if (quota) {
-    label = `Storage: ${(usage / 1e6).toFixed(0)} / ${(quota / 1e6).toFixed(
+    label = `${trans('Storage')}: ${(usage / 1e6).toFixed(0)} / ${(quota / 1e6).toFixed(
       0
     )} mb`;
     percent = (usage / quota) * 100;
@@ -22,7 +24,7 @@ export default function QuotaDisplay({ data, persistButton }) {
   return quota ? (
     <div>
       {persisted === PROMPT ? persistButton : null}
-      <div>{label}</div>
+      <div id="storage-box">{label}</div>
       <progress max="100" value={percent} title={label} />
     </div>
   ) : (

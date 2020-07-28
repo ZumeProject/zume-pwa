@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import AddToHomeScreenOutlined from '@material-ui/icons/AddToHomeScreenOutlined';
 import SystemUpdateOutlined from '@material-ui/icons/SystemUpdateOutlined';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from 'Components/zume/translationHooks';
 import { makeStyles } from '@material-ui/core/styles';
 import { isSafariIOS } from 'Utils/browser/userAgent';
 import clsx from 'clsx';
@@ -24,26 +24,26 @@ export default function InstallOrUpdateButton({
   showUpdateMessage,
   ...props
 }) {
-  const { t } = useTranslation();
+  const trans = useAppTranslation();
   let icon = null;
   let text = '';
   let label = '';
   let onClick = props.onClick;
   if (showUpdateMessage) {
     icon = <SystemUpdateOutlined />;
-    text = t('install|update');
-    label = t('install|update_explanation');
+    text = trans('Update');
+    label = trans('A new version of this app is available. Click to update this app.');
   } else {
     icon = <AddToHomeScreenOutlined />;
     if (isSafariIOS()) {
-      text = t('install|ios_learn_more');
-      label = t('install|ios_install_explanation');
+      text = trans('Learn more');
+      label = trans("Tap on Safari's share icon and tap 'Add to Home Screen' to install this app.");
       onClick = e => {
         window.open(iOSaddToHomeInstructionsUrl);
       };
     } else {
-      text = t('install|install');
-      label = t('install|install_explanation');
+      text = trans('Install');
+      label = trans('This app can be installed to your device. Click to install this app.');
     }
   }
 

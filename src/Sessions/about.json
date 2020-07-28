@@ -1,5 +1,5 @@
 {
-  "t": "About Zúme Project",
+  "t": "About Zúme Training",
   "assets": [
     {
       "type": "video",
@@ -20,7 +20,7 @@
   ],
   "sections": [
     {
-      "t": "About Zúme Project",
+      "t": "About Zúme Training",
       "parts": [
         {
           "type": "watch",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "t": "Details",
+      "t": "About Zúme Training",
       "parts": [
         {
           "type": "see",

@@ -7,7 +7,6 @@ import ZoomInFAB from 'Components/shared/ZoomInFAB';
 import { selectSession, getSessionTitles } from 'Redux/sessions';
 import { useSelector } from 'react-redux';
 import { useNavigation } from 'react-navi';
-import { useTranslation } from 'react-i18next';
 import { useAppTranslation } from 'Components/zume/translationHooks';
 import useBasenameUrl from 'Utils/browser/useBasenameUrl';
 
@@ -17,7 +16,6 @@ export default function Sessions({ selectedId }) {
   const { title } = titles[selectedId];
   const navigation = useNavigation();
   const href = useBasenameUrl(`/live/${selectedId}`);
-  const { t } = useTranslation();
   const trans = useAppTranslation();
 
   console.log(titles[selectedId]);
@@ -37,7 +35,7 @@ export default function Sessions({ selectedId }) {
         ) : null}
       </Box>
       <ZoomInFAB onClick={() => navigation.navigate(href)}>
-        {t('sessions|start_session')}
+        {trans('Start Session')}
       </ZoomInFAB>
     </Container>
   );

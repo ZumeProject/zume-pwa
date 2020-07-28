@@ -20,7 +20,6 @@ import ExitToAppIcon from '@material-ui/icons/ExitToAppOutlined';
 import BookIcon from '@material-ui/icons/BookOutlined';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { useDispatch } from 'react-redux';
-import { useTranslation } from 'react-i18next';
 import {
   useAppTranslation,
   useLocalizedAsset
@@ -39,7 +38,6 @@ const useStyles = makeStyles(theme => ({
 export default function Menu() {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const { t } = useTranslation();
   const trans = useAppTranslation();
   const asset = useLocalizedAsset();
   const [resetting, setResetting] = useState(false);
@@ -54,26 +52,27 @@ export default function Menu() {
           <ZumeInstallButton />
         </Box>
       </Box>
+      <Divider />
       <List
-        subheader={<ListSubheader>{t('menu|settings')}</ListSubheader>}
+        subheader={<ListSubheader>{trans('Settings')}</ListSubheader>}
         component="nav"
-        aria-label={t('menu|settings')}>
+        aria-label={trans('Settings')}>
         <ListItemLink href="/downloads">
           <ListItemIcon>
             <CloudDownloadIcon />
           </ListItemIcon>
-          <ListItemText primary={t('menu|downloads')} />
+          <ListItemText primary={trans('Downloads')} />
         </ListItemLink>
         <ListItemLink href="/language">
           <ListItemIcon>
             <TranslateIcon />
           </ListItemIcon>
-          <ListItemText primary={t('menu|language')} />
+          <ListItemText primary={trans('Language')} />
         </ListItemLink>
         <ListItem
           button
           onClick={() => {
-            const shouldReset = window.confirm(t(t('menu|reset_app_warning')));
+            const shouldReset = window.confirm(trans(trans('Resetting the app will delete all app data. Are you sure you want to reset?')));
             if (shouldReset) {
               setResetting(true);
               dispatch(reset());
@@ -87,7 +86,7 @@ export default function Menu() {
           <ListItemIcon>
             <DeleteForeverIcon />
           </ListItemIcon>
-          <ListItemText primary={t('menu|reset_app')} />
+          <ListItemText primary={trans('Reset App')} />
           {resetting && (
             <ListItemSecondaryAction>
               <CircularProgress />
@@ -95,37 +94,29 @@ export default function Menu() {
           )}
         </ListItem>
       </List>
+      <Divider />
       <List
-        subheader={<ListSubheader>{trans('About Zúme Project')}</ListSubheader>}
+        subheader={<ListSubheader>{trans('About Zúme Training')}</ListSubheader>}
         component="nav"
-        aria-label={trans('About Zúme Project')}>
+        aria-label={trans('About Zúme Training')}>
         <ListItemLink href="/about">
           <ListItemIcon>
             <InfoIcon />
           </ListItemIcon>
-          <ListItemText primary={t('navigation|about')} />
+          <ListItemText primary={trans('About')} />
         </ListItemLink>
         <ListItemLink href="https://zume.training/" target="_blank">
           <ListItemIcon>
             <HelpIcon />
           </ListItemIcon>
-          <ListItemText primary={t('menu|help')} />
+          <ListItemText primary={trans('Help')} />
         </ListItemLink>
         <ListItemLink href={asset('guidebook')} target="_blank">
           <ListItemIcon>
             <BookIcon />
           </ListItemIcon>
-          <ListItemText primary={t('menu|guidebook')} />
+          <ListItemText primary={trans('Workbook')} />
         </ListItemLink>
-      </List>
-      <Divider />
-      <List component="nav" aria-label="secondary mailbox folders">
-        <ListItem button>
-          <ListItemIcon>
-            <ExitToAppIcon />
-          </ListItemIcon>
-          <ListItemText primary={t('menu|signout')} />
-        </ListItem>
       </List>
     </div>
   );
