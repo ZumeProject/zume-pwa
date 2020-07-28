@@ -2,7 +2,7 @@ import React from 'react';
 import BannerWithAvatar from '../BannerWithAvatar';
 import Avatar from '@material-ui/core/Avatar';
 
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from 'Components/zume/translationHooks';
 import { isSafariIOS } from 'Utils/browser/userAgent';
 import AddToHomeScreenOutlined from '@material-ui/icons/AddToHomeScreenOutlined';
 import SystemUpdateOutlined from '@material-ui/icons/SystemUpdateOutlined';
@@ -15,20 +15,20 @@ export default function InstallOrUpdateBanner({
   button,
   ...props
 }) {
-  const { t } = useTranslation();
+  const trans = useAppTranslation();
   let icon = null;
   let message = '';
   if (showUpdateMessage) {
     icon = <SystemUpdateOutlined />;
-    message = t('install|update_explanation');
+    message = trans('A new version of this app is available. Click to update this app.');
   } else {
     if (isSafariIOS()) {
       icon = <IOSShareIcon />;
-      message = t('install|ios_install_explanation');
+      message = trans("Tap on Safari's share icon and tap 'Add to Home Screen' to install this app.");
       avatarClassName = '';
     } else {
       icon = <AddToHomeScreenOutlined />;
-      message = t('install|install_explanation');
+      message = trans('This app can be installed to your device. Click to install this app.');
     }
   }
 

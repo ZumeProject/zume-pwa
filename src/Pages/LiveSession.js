@@ -13,7 +13,7 @@ import { totalSectionLengths } from 'Utils/session/sectionLength';
 import { selectSession } from 'Redux/sessions';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigation } from 'react-navi';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from 'Components/zume/translationHooks';
 import useBasenameUrl from 'Utils/browser/useBasenameUrl';
 import typeToView from 'Components/shared/live/views/typeToView';
 import CountdownTimer from 'Components/shared/live/CountdownTimer';
@@ -55,7 +55,7 @@ export default function LiveSession({ selectedId, selectedIndex }) {
   const exit = () => navigation.navigate(backHref);
   const indexBaseHref = useBasenameUrl(`/live/${selectedId}/`);
 
-  const { t } = useTranslation();
+  const trans = useAppTranslation();
 
   let duration, durationKey;
   if (content?.duration) {
@@ -105,7 +105,7 @@ export default function LiveSession({ selectedId, selectedIndex }) {
         {partElement}
         {index === totalSlides - 1 ? (
           <Button variant="contained" onClick={exit}>
-            {t('live|finish')}
+            {trans('Finish')}
           </Button>
         ) : null}
       </Box>

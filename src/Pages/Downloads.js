@@ -9,7 +9,7 @@ import SessionDownloadList from 'Components/shared/session/SessionDownloadList';
 import { selectSessionSizes, filterToDownloadableAssets } from 'Redux/sessions';
 import { selectStorage } from 'Redux/downloads';
 import { useSelector, useDispatch } from 'react-redux';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from 'Components/zume/translationHooks';
 import { useLocalizedAssetMapper } from 'Components/zume/translationHooks';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownloadOutlined';
 import {
@@ -22,7 +22,7 @@ import {
 } from 'Redux/downloads/effects';
 
 export default function Downloads() {
-  const { t } = useTranslation();
+  const trans = useAppTranslation();
   const lam = useLocalizedAssetMapper();
   const sessionsWithSizes = useSelector(state =>
     selectSessionSizes(state, lam)
@@ -45,7 +45,7 @@ export default function Downloads() {
             data={storageEstimate}
             persistButton={
               <ZumePersistButton onClick={() => dispatch(persist())}>
-                {t('downloads|tap_to_persist')}
+                {trans('Tap to persist')}
               </ZumePersistButton>
             }
           />
@@ -73,7 +73,7 @@ export default function Downloads() {
       </Box>
       <ZoomInFAB
         icon={CloudDownloadIcon}
-        label={t('downloads|download_all')}
+        label={trans('Download all')}
         onClick={() => {
           sessionsWithSizes.forEach(s => {
             if (!s.offlineAccess) {
@@ -83,7 +83,7 @@ export default function Downloads() {
             }
           });
         }}>
-        {t('downloads|download_all')}
+        {trans('Download all')}
       </ZoomInFAB>
     </Container>
   );

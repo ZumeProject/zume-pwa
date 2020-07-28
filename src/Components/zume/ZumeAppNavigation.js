@@ -4,7 +4,7 @@ import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined'
 import HomeIcon from '@material-ui/icons/Home';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import RoutedBottomNavigation from '../shared/navigation/RoutedBottomNavigation';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from 'Components/zume/translationHooks';
 
 const classes = makeStyles({
   stickToBottom: {
@@ -16,20 +16,20 @@ const classes = makeStyles({
 });
 
 export default function ZumeAppNavigation() {
-  const { t } = useTranslation();
+  const trans = useAppTranslation();
   const defaultActions = [
     {
-      label: t('navigation|account'),
+      label: trans('Account'),
       icon: <AccountCircleOutlinedIcon />,
       path: '/menu'
     },
     {
-      label: t('navigation|home'),
+      label: trans('Home'),
       icon: <HomeIcon />,
       path: '/'
     },
     {
-      label: t('navigation|about'),
+      label: trans('About'),
       icon: <InfoOutlinedIcon />,
       path: '/about'
     }
