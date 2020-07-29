@@ -153,8 +153,7 @@
         {
           "type": "listen",
           "payload": {
-            "audio": "accountability-group",
-            "text": "Accountability Groups are made up of two or three people of the same gender - men with men, women with women - who meet once a week to discuss a set of questions that help reveal areas where things are going right and other areas that need correction. They can even meet by phone if they’re unable to meet face-to-face. Everyone in the group needs to understand that what is shared is confidential."
+            "audio": "accountability-group"
           }
         }
       ]
