@@ -5,61 +5,9 @@
     "nativeName": "English"
   },
   {
-    "enDisplayName": "Indonesian",
-    "code": "id_ID",
-    "nativeName": "Bahasa Indonesia"
-  },
-  {
-    "enDisplayName": "Spanish",
-    "code": "es",
-    "nativeName": "Español"
-  },
-  {
-    "enDisplayName": "Mandarin (Simplified)",
-    "code": "zh_CN",
-    "nativeName": "简体中文"
-  },
-  {
-    "enDisplayName": "Mandarin (Traditional)",
-    "code": "zh_TW",
-    "nativeName": "繁體中文"
-  },
-  {
-    "enDisplayName": "Malayalam",
-    "code": "ml_IN",
-    "nativeName": "മലയാളം"
-  },
-  {
-    "enDisplayName": "Hindi",
-    "code": "hi_IN",
-    "nativeName": "हिंदी"
-  },
-  {
-    "enDisplayName": "French",
-    "code": "fr_FR",
-    "nativeName": "Français"
-  },
-  {
-    "enDisplayName": "Arabic",
-    "code": "ar_LB",
-    "nativeName": "العربية",
-    "rtl": true
-  },
-  {
-    "enDisplayName": "Arabic (JO)",
-    "code": "ar_JO",
-    "nativeName": "العربية - الأردن",
-    "rtl": true
-  },
-  {
     "enDisplayName": "Bhojpuri",
     "code": "bho",
     "nativeName": "भोजपुरी"
-  },
-  {
-    "enDisplayName": "Bengali",
-    "code": "bn",
-    "nativeName": "বাংলা"
   },
   {
     "enDisplayName": "Bengali (India)",
@@ -67,16 +15,19 @@
     "nativeName": "বাংলা"
   },
   {
-    "enDisplayName": "Persian",
-    "code": "fa_IR",
-    "nativeName": "فارسی",
-    "rtl": true
+    "enDisplayName": "French",
+    "code": "fr_FR",
+    "nativeName": "Français"
   },
   {
-    "enDisplayName": "Hausa",
-    "code": "ha_NG",
-    "nativeName": "هَوُسَ",
-    "rtl": true
+    "enDisplayName": "Hindi",
+    "code": "hi_IN",
+    "nativeName": "हिंदी"
+  },
+  {
+    "enDisplayName": "Indonesian",
+    "code": "id_ID",
+    "nativeName": "Bahasa Indonesia"
   },
   {
     "enDisplayName": "Italian",
@@ -99,9 +50,24 @@
     "nativeName": "ພາສາລາວ"
   },
   {
+    "enDisplayName": "Mandarin (Simplified)",
+    "code": "zh_CN",
+    "nativeName": "简体中文"
+  },
+  {
+    "enDisplayName": "Mandarin (Traditional)",
+    "code": "zh_TW",
+    "nativeName": "繁體中文"
+  },
+  {
     "enDisplayName": "Marathi",
     "code": "mr",
     "nativeName": "मराठी"
+  },
+  {
+    "enDisplayName": "Malayalam",
+    "code": "ml_IN",
+    "nativeName": "മലയാളം"
   },
   {
     "enDisplayName": "Oriya",
@@ -127,6 +93,11 @@
     "enDisplayName": "Romanian",
     "code": "ro_RO",
     "nativeName": "Română"
+  },
+  {
+    "enDisplayName": "Spanish",
+    "code": "es",
+    "nativeName": "Español"
   },
   {
     "enDisplayName": "Somali",

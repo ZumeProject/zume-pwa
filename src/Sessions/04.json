@@ -68,24 +68,7 @@
           "type": "listen",
           "payload": {
             "audio": "testimony",
-            "text": [
-              "Jesus told His followers - “You are witnesses of these things.”",
-              "Everybody has a story. This is a chance to practice yours.",
-              "As followers of Jesus, we are “witnesses”, too - “testifying” about the impact Jesus has had on our lives. Your story of your relationship with God is called your Testimony. Everybody has a story. Sharing your Testimony is a chance to practice yours.",
-              "There are endless ways to shape your story, but here are some ways that we’ve seen work well:",
-              [
-                "A Simple Statement - You can share a simple statement about why you chose to follow Jesus. This works well for a brand new believer.",
-                "Before and After - You can share your “before” and “after” story - what your life was like before you knew Jesus and what your life your life is like now. Simple and powerful.",
-                "With and Without - You can share your “with” and “without” story - what your life is like “with Jesus” and what it would be like “without Him”. This version of your story works well if you came to faith at a young age."
-              ],
-              "When sharing your story, it’s helpful to think of it as part of a three-part process:",
-              [
-                "Their Story - Ask the person you are talking with to share about their spiritual journey.",
-                "Your Story - Then share your Testimony shaped around their experience.",
-                "God’s Story - Finally share God’s story in a way that connects with their world-view, values and priorities."
-              ],
-              "Your Testimony doesn’t have to be lengthy or share too many details to be impactful. In fact, keeping your story to around 3-minutes will leave time for questions and deeper conversation. If you’re worried about how to get started - keep it simple. God can use your story to change lives, but remember - you’re the one who gets to tell it."
-            ]
+            "text": "Find the \"3-Minute Testimony\" section in your Zúme Guidebook, and listen to the audio below."
           }
         }
       ]
@@ -93,7 +76,7 @@
     {
       "t": "Practice Sharing your Testimony (45min)",
       "duration": 45,
-      "info": "Break into groups of two or three and spend the next 45 minutes practicing sharing your Testimony."
+      "info": "Break into groups of two or three and and spend the next 45 minutes practicing sharing your Testimony using the Activity instructions on page 15 of your Zúme Guidebook."
     },
     {
       "t": "Vision Casting the Greatest Blessing",
@@ -184,18 +167,7 @@
           "type": "listen",
           "payload": {
             "audio": "lords-supper",
-            "text": [
-              "Jesus said - “I am the living bread that came down from heaven. Whoever eats this bread will live forever. This bread is my flesh, which I will give for the life of the world.”",
-              "Holy Communion or “The Lord’s Supper” is a way to celebrate our intimate connection and ongoing relationship with Jesus.",
-              "Here’s a simple way to celebrate --",
-              "When you gather as followers of Jesus, spend time in quiet meditation, silently considering and confessing your sins. When you are ready, have someone read this passage from scripture --",
-              "“For I received from the Lord that which I also delivered to you, that the Lord Jesus in the night in which He was betrayed took bread; and when He had given thanks, He broke it and said, “This is My body, which is for you; do this in remembrance of Me.” 1 Corinthians 11:23-24",
-              "Pass out bread you have set aside for your group, and eat. Continue the reading --",
-              "“In the same way, He took the cup also after supper, saying, ‘This cup is the new covenant in My blood; do this, as often as you drink it, in remembrance of Me.’” 1 Corinthians 11:25",
-              "Share the juice or wine you have set aside for your group, and drink. Finish the reading --",
-              "“For as often as you eat this bread and drink the cup, you proclaim the Lord’s death until He comes.” 1 Corinthians 11:26",
-              "Celebrate in prayer or singing. You have shared in The Lord’s Supper. You are His, and He is yours!"
-            ]
+            "text": "Find \"The Lord's Supper\" section in your Zúme Guidebook, and listen to the audio below."
           }
         }
       ]
@@ -203,7 +175,7 @@
     {
       "t": "Practice the Lord's Supper (10min)",
       "duration": 10,
-      "info": "Spend the next 10 minutes celebrating The Lord's Supper with your group."
+      "info": "Spend the next 10 minutes celebrating The Lord's Supper with your group using the pattern on page 15 of your Zúme Guidebook."
     },
     {
       "t": "LOOKING FORWARD",

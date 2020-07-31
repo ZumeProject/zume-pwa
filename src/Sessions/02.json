@@ -114,70 +114,18 @@
       "parts": [
         {
           "t": "LEAVE",
-          "d": [
-            "Spend the next 60 minutes in prayer individually, using \"The Prayer Cycle\" Below.",
-            "In just 12 simple steps - 5 minutes each - this Prayer Cycle guides you through twelve ways the Bible teaches us to pray. At the end, you’ll have prayed for an hour.",
-            {
-              "type": "image",
-              "payload": { "image": "prayer-cycle-graphic" }
-            },
-            {
-              "t": "PRAISE",
-              "d": "Start your prayer hour by praising the Lord. Praise Him for things that are on your mind right now. Praise Him for one special thing He has done in your life in the past week. Praise Him for His goodness to your family."
-            },
-            {
-              "t": "WAIT",
-              "d": "Spend time waiting on the Lord. Be silent and let Him pull together reflections for you."
-            },
-            {
-              "t": "CONFESS",
-              "d": "Ask the Holy Spirit to show you anything in your life that might be displeasing to Him. Ask Him to point out attitudes that are wrong, as well as specific acts for which you have not yet made a prayer of confession. Now confess that to the Lord so that you might be cleansed."
-            },
-            {
-              "t": "READ THE WORD",
-              "d": "Spend time reading in the Psalms, in the prophets, and passages on prayer located in the New Testament."
-            },
-            {
-              "t": "ASK",
-              "d": "Make requests on behalf of yourself."
-            },
-            {
-              "t": "INTERCESSION",
-              "d": "Make requests on behalf of others."
-            },
-            {
-              "t": "PRAY THE WORD",
-              "d": "Pray specific passages. Scriptural prayers as well as a number of psalms lend themselves well to this purpose."
-            },
-            {
-              "t": "THANK",
-              "d": "Give thanks to the Lord for the things in your life, on behalf of your family, and on behalf of your church."
-            },
-            {
-              "t": "SING",
-              "d": "Sing songs of praise or worship or another hymn or spiritual song."
-            },
-            {
-              "t": "MEDITATE",
-              "d": "Ask the Lord to speak to you. Have a pen and paper ready to record impressions He gives you."
-            },
-            {
-              "t": "LISTEN",
-              "d": "Spend time merging the things you have read, things you have prayed and things you have sung and see how the Lord brings them all together to speak to you."
-            },
-            {
-              "t": "PRAISE",
-              "d": "Praise the Lord for the time you have had to spend with Him and the impressions He has given you. Praise Him for His glorious attributes."
-            },
-            {
-              "type": "caption",
-              "payload": {
-                "text": "From Dick Eastman’s book The Hour that Changes the World © 2002 by Dick Eastman, Chosen Books, Grand Rapids, MI, used by permission."
-              }
-            },
-            "Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group."
-          ]
+          "d": "Spend the next 60 minutes in prayer individually, using the exercises in \"The Prayer Cycle\" section of the Zúme Guidebook as a guide."
         },
+        {
+          "t": "RETURN",
+          "d": "Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group."
+        }
+      ]
+    },
+    {
+      "t": "DISCUSS",
+      "duration": 5,
+      "parts": [
         {
           "type": "discuss",
           "questions": [
@@ -226,28 +174,7 @@
             "name": "list-of-100",
             "downloadLabel": "Download",
             "downloadKey": "list-of-100-worksheet"
-          },
-          "parts": [
-            {
-              "type": "EditableTable",
-              "payload": {
-                "title": "List of 100",
-                "columns": [
-                  { "title": "Name", "field": "name" },
-                  {
-                    "title": "Status",
-                    "field": "status",
-                    "initialEditValue": "unknown",
-                    "lookup": {
-                      "disciple": "Disciple",
-                      "unbeliever": "Unbeliever",
-                      "unknown": "Unknown"
-                    }
-                  }
-                ]
-              }
-            }
-          ]
+          }
         }
       ]
     },

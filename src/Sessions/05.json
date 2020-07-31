@@ -65,7 +65,7 @@
       "parts": [
         {
           "type": "watch",
-          "d": "Disciple-making can be rapidly advanced by finding a person of peace, even in a place where followers of Jesus are few and far between. How do you know when you have found a person of peace and what do you when you find them?",
+          "d": "Disciple-making can be rapidly advanced by finding a person of peace, even in a place where followers of Jesus are few and far between. How do you know when you have found a person of peace and what do you do when you find them?",
           "payload": {
             "video": "person-of-peace"
           }
@@ -81,29 +81,11 @@
     },
     {
       "t": "Practice the B.L.E.S.S. Prayer (15min)",
-      "d": "Practice a simple mnemonic to remind you of ways to pray for others.",
-      "duration": 15,
-      "info": "Break into groups of two or three and practice the B.L.E.S.S. Prayer.",
-      "parts": [
-        {
-          "d": [
-            "Here are five ways you can pray for people you meet during your Prayer Walk:",
-            "As you walk and pray, be alert for opportunities and listen for promptings by God’s Spirit to pray for individuals and groups you meet along the way.",
-            "You can say, “We’re praying for this community, is there anything in particular we can pray for you about?” Or say, “I’m praying for this area. Do you know anything in particular we should pray for?” After listening to their response you can ask about their own needs. If they share, pray for them right away. If the Lord leads, you may pray about other needs as well.",
-            "Use the word B.L.E.S.S. to help you remember 5 different ways you can pray:",
-            [
-              "Body [health]",
-              "Labor [job and finances]",
-              "Emotional [morale]",
-              "Social [relationships]",
-              "Spiritual [knowing and loving God more]"
-            ],
-            "In most cases, people are grateful you care enough to pray.",
-            "If the person is not a Christian, your prayer may open the door to a spiritual conversation and an opportunity to share your story and God’s story. You can invite them to be a part of a Bible study or even host one in their home.",
-            "If the person is a Christian you can invite them to join your Prayer Walk or train them how they can Prayer Walk and use simple steps like praying for areas of influence or the B.L.E.S.S. Prayer to grow God’s family even more."
-          ]
-        }
-      ]
+      "d": [
+        "Practice a simple mnemonic to remind you of ways to pray for others.",
+        "Break into groups of two or three and practicing the B.L.E.S.S. Prayer. The prayer pattern can be found in the Zúme Guidebook. Practice praying the five areas of the B.L.E.S.S. Prayer."
+      ],
+      "duration": 15
     },
     {
       "t": "Prayer Walking (60-90min)",

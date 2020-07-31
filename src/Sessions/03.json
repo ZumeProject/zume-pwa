@@ -115,23 +115,7 @@
     {
       "t": "PRACTICE SHARING GOD'S STORY (45min)",
       "duration": 45,
-      "info": "Break into groups of two or three people and spend the next 45 minutes practicing telling God's Story. You can use \"God's Story\" found below.",
-      "parts": [
-        {
-          "d": [
-            "Here is God’s Story of Good News -",
-            "In the beginning, God made the whole world and everything in it. He created the FIRST MAN and the FIRST WOMAN. He placed them in a beautiful garden. He made them PART OF HIS FAMILY and had a CLOSE RELATIONSHIP with them. He created them to LIVE FOREVER. There was no such thing as death.",
-            "Even in this perfect place, man rebelled against God and brought SIN and SUFFERING into the world. God BANISHED man from the garden. The relationship between man and God was BROKEN. Now man would have to face DEATH.",
-            "Over many hundreds of years, God kept sending MESSENGERS into the world. They reminded man of his sin but also told him of God’s FAITHFULNESS and PROMISE to send a SAVIOR into the world. The Savior would RESTORE the close relationship between God and Man. The Savior would RESCUE man from death. The Savior would give ETERNAL LIFE and be with man forever.",
-            "God loves us so much that when the time was right, He sent His Son into the world to be that Savior. Jesus was God’s Son. He was born into the world through a virgin. He lived a perfect life. He never sinned. Jesus taught people about God. He performed many miracles showing His great power. He cast out many demons. He healed many people. He made the blind see. He made the deaf hear. He made the lame walk. Jesus even raised the dead. Many religious leaders were THREATENED and JEALOUS of Jesus. They wanted Him killed. Since He never sinned, Jesus did not have to die. But He CHOSE to die as a SACRIFICE for all of us. His painful death covered up the sins of mankind. After this, Jesus was buried in a tomb.",
-            "God saw the SACRIFICE Jesus made and accepted it. God showed His acceptance by raising Jesus from the dead on the third day. God said that if we BELIEVE and RECEIVE Jesus’ sacrifice for our sins -- If we TURN AWAY from our sins and FOLLOW Jesus, God CLEANS US from all sin and WELCOMES us back into His family. God sends the HOLY SPIRIT to live inside us and make us able to follow Jesus.",
-            "We are BAPTIZED in water to show and seal this restored relationship. As a symbol of death we are buried beneath the water. As a symbol of new life we are raised out of the water to follow Jesus. When Jesus rose from the dead, He spent 40 days on earth. Jesus taught His followers to go everywhere and tell the good news of His salvation to everyone around the world.",
-            "Jesus said - Go and MAKE DISCIPLES of all nations, BAPTIZING them in the name of the Father, Son and Holy Spirit; and TEACHING them to obey all I have commanded. I will be with you always - even to the end of this age.",
-            "Jesus was then TAKEN UP before their eyes into heaven. One day, Jesus will COME AGAIN in the same way He left. He will PUNISH FOREVER those who did not love and obey Him. He will RECEIVE and REWARD FOREVER those who did love and obey Him. We will LIVE FOREVER with Him in a New Heaven and on a New Earth.",
-            "I BELIEVED and RECEIVED the sacrifice Jesus made for my sins. He has made me clean and restored me as part of God’s family. He loves me, and I love Him and will live with Him forever in His kingdom. God loves you and wants you to receive this gift, as well. Would you like to do that right now?"
-          ]
-        }
-      ]
+      "info": "Break into groups of two or three people and spend the next 45 minutes practicing telling God's Story. You can use the using the Activity instructions for \"God's Story\" found in your Zúme Guidebook."
     },
     {
       "t": "Baptism and How To Do It",
@@ -150,18 +134,7 @@
         {
           "type": "listen",
           "payload": {
-            "audio": "baptism",
-            "text": [
-              "Baptism is a picture of our new life, soaked in the image of Jesus, transformed in obedience to God. It is a picture of our death to sin, just as Jesus died for our sins; a burial of our old way of life, just as Jesus was buried; a rebirth to a new life in Christ, just as Jesus was resurrected and lives today.",
-              "Jesus said -- “go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit...”",
-              "Baptism - or Baptizo in the original Greek language - means a drenching or submerging - like when you dye a cloth and it soaks in the color and comes out transformed. Baptism is a picture of our new life, soaked in the image of Jesus, transformed in obedience to God. It is a picture of our death to sin, just as Jesus died for our sins; a burial of our old way of life, just as Jesus was buried; a rebirth to a new life in Christ, just as Jesus was resurrected and lives today.",
-              "If you have never baptized someone before, it may seem intimidating, but it shouldn’t be. Here are some simple steps:",
-              "Find some standing water, deep enough to allow the new disciple to be submerged. This can be a pond, river, lake or ocean. It could be a bathtub or another way to gather water.",
-              "Let the disciple hold one of your hands with theirs and support their back with the other.",
-              "Ask two questions like these to make sure they understand their decision. “Have you received Jesus Christ as your Lord and Savior?” “Will you obey and serve Him as your King for the rest of your life?”",
-              "If they answer “Yes,” to both, then say something like this: “Because you’ve professed your faith in the Lord Jesus, I now baptize you in the name of the Father, Son, and Holy Spirit.”",
-              "Help them lower into the water, submerge completely and raise them back up. Congratulations! You’ve baptized a new follower of Jesus - a new citizen of heaven - a new child of the Living God. It’s time to celebrate!"
-            ]
+            "audio": "baptism"
           }
         },
         {
