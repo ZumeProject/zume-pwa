@@ -3,8 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import TranslateIcon from '@material-ui/icons/TranslateOutlined';
 import RoutedBottomNavigation from '../shared/navigation/RoutedBottomNavigation';
-import { useAppTranslation } from 'Components/zume/translationHooks';
+import {useAppTranslation, useLocalizedAsset} from 'Components/zume/translationHooks';
 
 const classes = makeStyles({
   stickToBottom: {
@@ -19,11 +20,6 @@ export default function ZumeAppNavigation() {
   const trans = useAppTranslation();
   const defaultActions = [
     {
-      label: trans('Account'),
-      icon: <AccountCircleOutlinedIcon />,
-      path: '/menu'
-    },
-    {
       label: trans('Home'),
       icon: <HomeIcon />,
       path: '/'
@@ -32,6 +28,17 @@ export default function ZumeAppNavigation() {
       label: trans('About'),
       icon: <InfoOutlinedIcon />,
       path: '/about'
+    },
+    {
+      label: trans('Account'),
+      icon: <AccountCircleOutlinedIcon />,
+      path: '/menu'
+    },
+
+    {
+      label: trans('Language'),
+      icon: <TranslateIcon />,
+      path: '/language'
     }
   ];
 
