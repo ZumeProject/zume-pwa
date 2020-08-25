@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import LiveSessionWrapper from 'Components/shared/live/LiveSessionWrapper';
 import Section from 'Components/shared/live/views/Section';
+
+import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import liveSlice, {
@@ -14,9 +16,19 @@ import { selectSession } from 'Redux/sessions';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigation } from 'react-navi';
 import { useAppTranslation } from 'Components/zume/translationHooks';
+import { selectLanguage } from 'Redux/language';
+
 import useBasenameUrl from 'Utils/browser/useBasenameUrl';
 import typeToView from 'Components/shared/live/views/typeToView';
 import CountdownTimer from 'Components/shared/live/CountdownTimer';
+
+const useStyles = makeStyles(() => ({
+  rtlRoot: {
+    flip: false,
+    direction: 'rtl',
+  },
+}));
+
 
 export default function LiveSession({ selectedId, selectedIndex }) {
   const session = useSelector((state) => selectSession(state, selectedId));
@@ -56,6 +68,9 @@ export default function LiveSession({ selectedId, selectedIndex }) {
   const indexBaseHref = useBasenameUrl(`/live/${selectedId}/`);
 
   const trans = useAppTranslation();
+  const { rtl } = useSelector(selectLanguage);
+  const classes = useStyles();
+
 
   let duration, durationKey;
   if (content?.duration) {
@@ -96,11 +111,13 @@ export default function LiveSession({ selectedId, selectedIndex }) {
 
     return (
       <Box
-        key={key}
-        height="calc(100vh - 128px)"
-        maxWidth={'960px'}
-        m="auto"
-        p={3}>
+          className={rtl ? classes.rtlRoot : ''}
+          key={key}
+          height="calc(100vh - 128px)"
+          maxWidth={'960px'}
+          m="auto"
+          p={3}
+        >
         {sectionElement}
         {partElement}
         {index === totalSlides - 1 ? (
@@ -112,6 +129,9 @@ export default function LiveSession({ selectedId, selectedIndex }) {
     );
   };
   const onChangeIndex = (index) => {
+    if (index < 0) {
+      index = 0;
+    }
     navigation.navigate(indexBaseHref + index);
   };
 

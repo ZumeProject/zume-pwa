@@ -22,16 +22,16 @@ i18n
     fallbackLng: 'en',
     debug: process.env.NODE_ENV !== 'production',
     interpolation: {
-      escapeValue: false // not needed for react as it escapes by default
+      escapeValue: false, // not needed for react as it escapes by default
     },
     backend: {
-      loadPath: (process.env.PUBLIC_URL || '') + '/locales/{{lng}}/{{ns}}.json'
+      loadPath: (process.env.PUBLIC_URL || '') + '/locales/{{lng}}/{{ns}}.json',
     },
     keySeparator: '|',
     nsSeparator: '}',
     // don't try to load en-US locale, just en for example.
     // see: https://github.com/i18next/i18next/issues/964
-    load: 'languageOnly'
+    load: 'languageOnly',
   })
   .then(syncI18nAndReduxLanguage);
 

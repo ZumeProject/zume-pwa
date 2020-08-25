@@ -8,6 +8,7 @@ import { StylesProvider, jssPreset } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import i18n from 'i18next';
 import { syncI18nAndReduxLanguage } from './I18n';
+import languages from 'I18n/languages.json';
 import { selectLanguage } from 'Redux/language';
 
 // Configure JSS
@@ -34,15 +35,15 @@ export function onRtlChange(rtl) {
 
 export const RTLTheme = createMuiTheme({
   ...theme,
-  direction: 'rtl'
+  direction: 'rtl',
 });
 
-export const DirectionalOuterTheme = props => {
+export const DirectionalOuterTheme = (props) => {
   const { rtl } = useSelector(selectLanguage);
   const onLanguageChanged = () => {
-    let currentIsRTL = i18n.dir() === 'rtl' ? true : false;
-    if (rtl !== currentIsRTL) {
-      onRtlChange(currentIsRTL);
+    const languageDetails = languages.find((l) => l.code === i18n.language);
+    if (languageDetails) {
+      onRtlChange(languageDetails.rtl);
     }
     syncI18nAndReduxLanguage();
   };
