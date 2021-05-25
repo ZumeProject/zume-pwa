@@ -1,1 +1,0 @@
-These json files include the guidebook content. They are retained for v2.0 release where they will be included. Then this folder can be deleted as redundant.
