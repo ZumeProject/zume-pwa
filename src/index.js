@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import * as Sentry from '@sentry/browser';
+import * as Sentry from '@sentry/react';
+import { Integrations } from "@sentry/tracing";
 import './index.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import 'I18n';
@@ -16,7 +17,13 @@ import { loadSessions } from 'Redux/sessions';
 import Splash from 'Components/shared/Splash';
 
 Sentry.init({
-  dsn: 'https://1b32b862f1ec42b1a86375ad94de8281@sentry.io/1840364'
+  dsn: 'https://c14a98e530c949898e7892254d666814@o986793.ingest.sentry.io/5943555',
+  integrations: [new Integrations.BrowserTracing()],
+
+  // Set tracesSampleRate to 1.0 to capture 100%
+  // of transactions for performance monitoring.
+  // We recommend adjusting this value in production
+  tracesSampleRate: .1,
 });
 
 ReactDOM.render(
