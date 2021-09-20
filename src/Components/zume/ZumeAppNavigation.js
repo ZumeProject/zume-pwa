@@ -5,7 +5,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import TranslateIcon from '@material-ui/icons/TranslateOutlined';
 import RoutedBottomNavigation from '../shared/navigation/RoutedBottomNavigation';
-import {useAppTranslation, useLocalizedAsset} from 'Components/zume/translationHooks';
+import {useAppTranslation} from 'Components/zume/translationHooks';
 
 const classes = makeStyles({
   stickToBottom: {

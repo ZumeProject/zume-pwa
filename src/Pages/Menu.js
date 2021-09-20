@@ -16,7 +16,7 @@ import TranslateIcon from '@material-ui/icons/TranslateOutlined';
 import InfoIcon from '@material-ui/icons/InfoOutlined';
 import HelpIcon from '@material-ui/icons/HelpOutline';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
-import ExitToAppIcon from '@material-ui/icons/ExitToAppOutlined';
+// import ExitToAppIcon from '@material-ui/icons/ExitToAppOutlined';
 import BookIcon from '@material-ui/icons/BookOutlined';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { useDispatch } from 'react-redux';
