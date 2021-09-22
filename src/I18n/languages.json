@@ -21,6 +21,13 @@
     "rtl": true
   },
   {
+    "enDisplayName": "American Sign Language",
+    "code": "asl",
+    "locale": "asl",
+    "nativeName": "Sign Language",
+    "rtl": false
+  },
+  {
     "enDisplayName": "Bhojpuri",
     "code": "bho",
     "locale": "bho",
