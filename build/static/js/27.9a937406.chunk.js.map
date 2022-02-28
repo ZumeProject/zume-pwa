@@ -1,0 +1,1 @@
+{"version":3,"sources":["Sessions/guidebook-included-versions/notes.txt"],"names":["module","exports"],"mappings":"gGAAAA,EAAOC,QAAU,IAA0B","file":"static/js/27.9a937406.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/notes.6937fa7d.txt\";"],"sourceRoot":""}
