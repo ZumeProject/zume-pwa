@@ -6,7 +6,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   wrapper: {
     position: 'fixed',
-    bottom: theme.spacing(8),
+    bottom: theme.spacing(11),
     left: '50%'
   },
   fab: {

@@ -12,7 +12,8 @@ const classes = makeStyles({
     width: '100%',
     position: 'fixed',
     bottom: 0,
-    borderTop: '1px solid rgba(0, 0, 0, 0.12)'
+    borderTop: '1px solid rgba(0, 0, 0, 0.12)',
+    height:'80px'
   }
 });
 
