@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "training.zume.app.twa",
+      "sha256_cert_fingerprints": [
+        "B5:29:E7:37:EC:44:B2:AC:CA:43:64:2C:D3:AF:03:AA:51:30:F7:B7:A7:E2:A9:33:30:10:07:EC:F2:BF:E4:BF"
+      ]
+    }
+  }
+]
