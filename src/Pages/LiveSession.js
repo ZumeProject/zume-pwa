@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import LiveSessionWrapper from 'Components/shared/live/LiveSessionWrapper';
 import Section from 'Components/shared/live/views/Section';
 
@@ -29,12 +29,9 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-
 export default function LiveSession({ selectedId, selectedIndex }) {
   const session = useSelector((state) => selectSession(state, selectedId));
-  const formData = useSelector((state) =>
-    selectFormsByName(state, session?.forms)
-  );
+  const formData = useSelector((state) => selectFormsByName(state, session?.forms));
 
   const partIndex = useSelector(selectPartIndex);
 
@@ -49,16 +46,16 @@ export default function LiveSession({ selectedId, selectedIndex }) {
 
   const sections = session?.sections;
 
-  useEffect(() => {
-    dispatch(liveSlice.actions.sectionsLoaded(sections));
-    const html = document.querySelector('html');
-    // increase root font size for in-session experience.
-    const originalFontSize = html.style.fontSize;
-    html.style.fontSize = '24px';
-    return () => {
-      html.style.fontSize = originalFontSize;
-    };
-  }, [selectedId, dispatch, sections]);
+  // useEffect(() => {
+  //   dispatch(liveSlice.actions.sectionsLoaded(sections));
+  //   const html = document.querySelector('html');
+  //   // increase root font size for in-session experience.
+  //   const originalFontSize = html.style.fontSize;
+  //   html.style.fontSize = '24px';
+  //   return () => {
+  //     html.style.fontSize = originalFontSize;
+  //   };
+  // }, [selectedId, dispatch, sections]);
   const content = useSelector((state) => selectCurrentPartContent(state));
   const totalSlides = totalSectionLengths(sections);
 
@@ -70,7 +67,6 @@ export default function LiveSession({ selectedId, selectedIndex }) {
   const trans = useAppTranslation();
   const { rtl } = useSelector(selectLanguage);
   const classes = useStyles();
-
 
   let duration, durationKey;
   if (content?.duration) {
@@ -93,9 +89,7 @@ export default function LiveSession({ selectedId, selectedIndex }) {
 
     if (content) {
       sectionElement =
-        partIndex || content.type === 'section' ? null : (
-          <Section {...content.section} />
-        );
+        partIndex || content.type === 'section' ? null : <Section {...content.section} />;
 
       let data = null;
       if (content.type === 'form') {
@@ -111,13 +105,13 @@ export default function LiveSession({ selectedId, selectedIndex }) {
 
     return (
       <Box
-          className={rtl ? classes.rtlRoot : ''}
-          key={key}
-          height="calc(100vh - 128px)"
-          maxWidth={'960px'}
-          m="auto"
-          p={3}
-        >
+        className={rtl ? classes.rtlRoot : ''}
+        key={key}
+        height="calc(100vh - 128px)"
+        maxWidth={'960px'}
+        m="auto"
+        p={3}
+      >
         {sectionElement}
         {partElement}
         {index === totalSlides - 1 ? (

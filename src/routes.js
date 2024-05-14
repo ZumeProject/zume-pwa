@@ -5,6 +5,7 @@ import ZumeViewWithNav from 'Components/zume/ZumeViewWithNav';
 import App from 'Pages/App';
 import Menu from 'Pages/Menu';
 import Language from 'Pages/Language';
+import Font from 'Pages/Font';
 import Sessions from 'Pages/Sessions';
 import LiveSession from 'Pages/LiveSession';
 import Downloads from 'Pages/Downloads';
@@ -25,29 +26,33 @@ const nonNavViews = ['/live'];
 const toMount = {
   '/': route({
     title: 'Home',
-    view: <App />
+    view: <App />,
   }),
   '/menu': route({
     title: 'Menu',
-    view: <Menu />
+    view: <Menu />,
   }),
   '/language': route({
     title: 'Language',
-    view: <Language />
+    view: <Language />,
   }),
-  '/session/:id': route(async req => {
+  '/font': route({
+    title: 'Font',
+    view: <Font />,
+  }),
+  '/session/:id': route(async (req) => {
     let id = req.params.id;
     return { title: 'Sessions', view: <Sessions selectedId={id} /> };
   }),
   '/downloads': route({
     title: 'Downloads',
-    view: <Downloads />
+    view: <Downloads />,
   }),
-  '/live/:id': route(async req => {
+  '/live/:id': route(async (req) => {
     let id = req.params.id;
     return { title: 'Live session', view: <LiveSession selectedId={id} /> };
   }),
-  '/live/:id/:index': route(async req => {
+  '/live/:id/:index': route(async (req) => {
     let id = req.params.id;
     let index;
     if (!isNaN(req.params.index)) {
@@ -55,20 +60,20 @@ const toMount = {
     }
     return {
       title: 'Live session',
-      view: <LiveSession selectedId={id} selectedIndex={index} />
+      view: <LiveSession selectedId={id} selectedIndex={index} />,
     };
   }),
   '/about': route({
     title: 'About',
-    view: <About />
-  })
+    view: <About />,
+  }),
 };
 
 const routes = mount(toMount);
 export default compose(
-  withView(request => {
+  withView((request) => {
     if (
-      nonNavViews.some(v => {
+      nonNavViews.some((v) => {
         return request.path.startsWith(v);
       })
     ) {
@@ -81,5 +86,5 @@ export default compose(
       );
     }
   }),
-  routes
+  routes,
 );

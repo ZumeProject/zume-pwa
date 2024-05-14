@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import ZumeInstallBanner from 'Components/zume/ZumeInstallBanner';
@@ -6,9 +6,16 @@ import ZumeLogo from 'Components/zume/ZumeLogo';
 import { useSelector } from 'react-redux';
 import SessionGridList from 'Components/shared/session/SessionGridList';
 import { getSessionTitles } from 'Redux/sessions';
+import { selectSettings } from 'Redux/settings';
 
 function App() {
   const titles = useSelector(getSessionTitles);
+  const { fontSize } = useSelector(selectSettings);
+
+  useEffect(() => {
+    const html = document.querySelector('html');
+    html.style.fontSize = fontSize;
+  }, [fontSize]);
 
   return (
     <Container bgcolor="white" component="main" maxWidth="md">
@@ -17,12 +24,7 @@ function App() {
         <br />
         <div className="App">
           <header className="App-header">
-            <Box
-              bgcolor="white"
-              display="flex"
-              m={1}
-              p={1}
-              justifyContent="center">
+            <Box bgcolor="white" display="flex" m={1} p={1} justifyContent="center">
               <ZumeLogo size="large" />
             </Box>
           </header>
