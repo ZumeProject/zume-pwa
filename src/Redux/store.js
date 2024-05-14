@@ -2,7 +2,7 @@ import {
   configureStore,
   combineReducers,
   getDefaultMiddleware,
-  createAction
+  createAction,
 } from '@reduxjs/toolkit';
 import counterSlice from './counter';
 import languageSlice from './language';
@@ -12,6 +12,7 @@ import downloadsSlice from './downloads';
 import liveSlice from './live';
 import groupsSlice from './groups';
 import formsSlice from './forms';
+import savepointsSlice from './savepoints';
 import { deleteCache } from './downloads/cache';
 
 /* Setup required to enable offline redux */
@@ -22,16 +23,16 @@ import offlineConfig from '@redux-offline/redux-offline/lib/defaults';
 
 const persistConfig = {
   key: 'root',
-  storage
+  storage,
 };
 
 const {
   middleware: offlineMiddleware,
   enhanceReducer: offlineEnhanceReducer,
-  enhanceStore: offlineEnhanceStore
+  enhanceStore: offlineEnhanceStore,
 } = createOffline({
   ...offlineConfig,
-  persist: false
+  persist: false,
 });
 
 const reducers = combineReducers({
@@ -42,7 +43,8 @@ const reducers = combineReducers({
   downloads: downloadsSlice.reducer,
   live: liveSlice.reducer,
   groups: groupsSlice.reducer,
-  forms: formsSlice.reducer
+  forms: formsSlice.reducer,
+  savepoints: savepointsSlice.reducer,
 });
 
 export const reset = createAction('RESET');
@@ -54,10 +56,7 @@ const rootReducer = (state, action) => {
   return reducers(state, action);
 };
 
-const persistedReducer = persistReducer(
-  persistConfig,
-  offlineEnhanceReducer(rootReducer)
-);
+const persistedReducer = persistReducer(persistConfig, offlineEnhanceReducer(rootReducer));
 
 /* Now configure the store */
 
@@ -66,12 +65,12 @@ const store = configureStore({
   middleware: [
     ...getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: ['persist/PERSIST']
-      }
+        ignoredActions: ['persist/PERSIST'],
+      },
     }),
-    offlineMiddleware
+    offlineMiddleware,
   ],
-  enhancers: [offlineEnhanceStore]
+  enhancers: [offlineEnhanceStore],
 });
 
 export const persistor = persistStore(store);
